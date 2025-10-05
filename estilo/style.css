@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* Importa a fonte Bebas Neue do Google Fonts */
+
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+/*cores para utlizar no site:*/
+:root {
+    --cor-1: #c5ebd6;
+    --cor-2: #83e1ad;
+    --cor-3: #3ddc84;
+    --cor-4: #2fa866;
+    --cor-5: #1a5c37;
+    --cor-6: #063d1e;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif; /* Define a fonte padrão como Arial */
+    --fonte-destaque: 'Bebas Neue', cursive; /* Define a fonte principal como Bebas Neue */
+    --fonte-android: 'Android', cursive; /* Define a fonte do título como Android */
+}
+
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
+}
+
+
+main > p {
+    margin: 15px 0px; /* Espaçamento superior e inferior dos parágrafos */
+    text-align: justify; /* Justifica o texto dos parágrafos */
+}
+
+
+main p {
+    margin: 15px 0px; /* Espaçamento superior e inferior dos parágrafos */
+    text-align: justify; /* Justifica o texto dos parágrafos */
+    text-indent: 30px; /* Indenta a primeira linha dos parágrafos */
+    font-size: 1em; /* Tamanho da fonte dos parágrafos */
+    line-height: 2em; /* Espaçamento entre linhas dos parágrafos */
+}
+
+
+main strong {
+    color: var(--cor-4); /* Cor do texto em negrito */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+main a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto dos links em negrito */
+    color: var(--cor-5); /* Cor dos links */
+    background-color: var(--cor-1); /* Cor de fundo dos links */
+    padding: 2px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Arredonda os cantos dos links */
+}
+
+
+main a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+    background-color: var(--cor-3); /* Cor de fundo ao passar o mouse sobre os links */
+    color: var(--cor-6); /* Cor do texto ao passar o mouse sobre os links */
+    transition: 0.1s /* Transição suave para a mudança de cor */
+}
+
+
+body {
+    background-color: var(--cor-2); /* Cor de fundo do site */
+    font-family: var(--fonte-padrao); /* Aplica a fonte padrão ao corpo do site */
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor-3), var(--cor-6)); /* Gradiente de cor para o cabeçalho */
+    min-height: 150px; /* Altura mínima do cabeçalho */
+    text-align: center; /* Centraliza o texto do subtítulo */
+    padding-top: 40px; /* Espaçamento interno superior do cabeçalho */
+}
+
+
+header > h1 {
+    color: white; /* Cor do título principal */
+    font-family: var(--fonte-destaque); /* Aplica a fonte de destaque ao título principal */
+    font-size: 3em;
+    margin-bottom: 25px; /* Espaçamento inferior do título principal */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.699); /* Adiciona sombra ao texto do título principal */
+}
+
+
+header > p {
+    font-family: var(--fonte-padrao); /* Aplica a fonte padrão ao subtítulo */
+    font-size: 1.2em; /* Tamanho da fonte do subtítulo */
+    color: white; /* Cor do subtítulo */
+    max-width: 500px; /* Largura máxima do subtítulo */
+    padding-right: 10px; /* Espaçamento interno direito do subtítulo */
+    padding-left: 10px; /* Espaçamento interno esquerdo do subtítulo */
+    margin: auto; /* Centraliza o subtítulo */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.788); /* Adiciona sombra ao texto do subtítulo */
+}
+
+
+nav {
+    background-color: var(--cor-6); /* Cor de fundo do menu de navegação */
+    display: flex; /* Utiliza flexbox para o layout do menu de navegação */
+    justify-content: center; /* Centraliza os itens do menu de navegação */
+    gap: 15px; /* Espaçamento entre os itens do menu de navegação */
+    padding: 10px; /* Espaçamento interno do menu de navegação */
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.753); /* Adiciona sombra ao menu de navegação */
+}
+
+
+nav a {
+    color: white; /* Cor dos links do menu de navegação */
+    padding: 10px; /* Espaçamento interno dos links do menu de navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto dos links em negrito */
+}
+
+
+nav > a:hover {
+    background-color: var(--cor-3); /* Cor de fundo ao passar o mouse sobre os links */
+    color: var(--cor-6); /* Cor do texto ao passar o mouse sobre os links */
+    border-radius: 5px; /* Arredonda os cantos dos links ao passar o mouse */
+    transition: 0.2s
+
+}
+
+
+main {
+    min-width: 300px; /* Largura mínima do conteúdo principal */
+    max-width: 1000px; /* Largura máxima do conteúdo principal */
+    margin: auto; /* Centraliza o conteúdo principal */
+    margin-bottom: 30px; /* Espaçamento inferior do conteúdo principal */
+    padding: 20px; /* Espaçamento interno do conteúdo principal */
+    background-color: white; /* Cor de fundo do conteúdo principal */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+    border-bottom-left-radius: 10px; /* Arredonda o canto inferior esquerdo */
+    border-bottom-right-radius: 10px; /* Arredonda o canto inferior direito */
+}
+
+
+main img.pequena {
+    max-width: 350px; /* Define a largura máxima da imagem */
+    display: block; /* Exibe a imagem como um bloco */
+    margin: 10px auto; /* Centraliza a imagem com margem superior e inferior de 10px */
+}
+
+main h1 {
+    color: var(--cor-5); /* Cor do título do artigo */
+    font-family: var(--fonte-android); /* Aplica a fonte do título ao título do artigo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.699); /* Adiciona sombra ao texto do título do artigo */
+    font-size: 2em; /* Tamanho da fonte do título do artigo */
+    margin-bottom: 15px; /* Espaçamento inferior do título do artigo */
+    text-align: center; /* Centraliza o título do artigo */
+    padding: 10px; /* Espaçamento interno do título do artigo */
+    background-image: linear-gradient(to right, var(--cor-1), transparent); /* Gradiente de cor para o título */
+    border-radius: 10px; /* Arredonda os cantos do título do artigo */
+}
+
+
+main h2 {
+    font-family: var(--fonte-android); /* Aplica a fonte do título ao subtítulo do artigo */
+    color: var(--cor-4); /* Cor do subtítulo do artigo */
+    font-size: 1.3em; /* Tamanho da fonte do subtítulo do artigo */
+    background-image: linear-gradient(to right, var(--cor-1), transparent); /* Gradiente de cor para o subtítulo */
+    text-indent: 10px; /* Indenta a primeira linha do subtítulo */
+    margin-top: 20px; /* Espaçamento superior do subtítulo */
+}
+
+
+aside {
+    background-color: var(--cor-2); /* Cor de fundo da barra lateral */
+    padding: 10px; /* Espaçamento interno da barra lateral */
+    border-radius: 10px; /* Arredonda os cantos da barra lateral */
+    
+}
+
+
+aside h3 {
+    color: #0a250b;
+    font-family: var(--fonte-android); /* Aplica a fonte do título ao título do artigo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.555); /* Adiciona sombra ao texto do título do artigo */
+    text-align: center; /* Centraliza o título do artigo */
+    margin: -10px -10px 0px -10px;
+    padding: 10px; /* Espaçamento interno do título do artigo */
+    background-image: linear-gradient(to right, var(--cor-1), var(--cor-6));
+    border-radius: 10px 10px 0px 0px; /* Arredonda os cantos do título do artigo */
+    
+}
+
+
+aside ul {
+    list-style-type: '\2714'; /* Define o tipo de marcador como um checkmark */
+    list-style-position: inside; /* Posições dos marcadores dentro da lista */
+    columns: 2;
+}
+
+
+aside ul li abbr {
+    text-decoration: none; /* Remove o sublinhado dos itens da lista */
+   
+}
+
+
+aside li {
+    text-align: center; /* Centraliza o texto dos itens da lista */
+    margin: 5px 0px; /* Espaçamento superior e inferior dos itens da lista */
+    font-weight: bold; /* Deixa o texto dos itens da lista em negrito */
+    color: var(--cor-5); /* Cor dos itens da lista */
+    background-color: var(--cor-1); /* Cor de fundo dos itens da lista */
+    padding: 5px; /* Espaçamento interno dos itens da lista */
+    border-radius: 5px; /* Arredonda os cantos dos itens da lista */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.897); /* Adiciona sombra aos itens da lista */
+    transition: 0.2s; /* Transição suave para a mudança de cor */
+    padding-left: 0%; /* Remove o espaçamento interno esquerdo da lista */
+    margin-top: 0px; /* Espaçamento superior da lista */
+}
+
+
+main img {
+    width: 100%; /* Imagens ocupam 100% da largura do contêiner */
+
+}
+
+
+div.video { 
+    background-color: var(--cor-5); 
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+footer {
+    background-color: var(--cor-6); /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+    font-size: 0.8em; /* Tamanho da fonte do rodapé */
+    padding: 5px; /* Espaçamento interno do rodapé */
+}
+
+
+footer a {
+    color: white; /* Cor dos links do rodapé */
+    font-weight: bold; /* Deixa o texto dos links em negrito */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+    color: var(--cor-3); /* Cor do texto ao passar o mouse sobre os links */
+    transition: 0.1s /* Transição suave para a mudança de cor */
+}
